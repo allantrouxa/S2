@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-image: url("https://www.designi.com.br/images/preview/10684841.jpg");
+            background-size: cover;
+        }
+
+        h1 { padding: 20%;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #botaoS {
+            position: absolute;
+            left: 45%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            border: solid black 1.5px;
+        }
+
+        #botaoN {
+            position: absolute;
+            left: 55%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <h1> Voçê me daria um beijinho? :) </h1>
+    <button id="botaoN">Não</button>
+    <a id="botaoS" href="./uiiiii.html">Sim</a>
+
+
+    <script>
+        var meuBotao = document.getElementById("botaoN");
+
+        meuBotao.addEventListener("mouseover", function () {
+            var novoLeft = Math.floor(Math.random() * window.innerWidth);
+            var novoTop = Math.floor(Math.random() * window.innerHeight);
+            meuBotao.style.left = novoLeft + "px";
+            meuBotao.style.top = novoTop + "px";
+        });
+    </script>
+</body>
+
+</html>
